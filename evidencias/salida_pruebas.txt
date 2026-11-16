@@ -1,0 +1,21 @@
+=== Pruebas de la calculadora de descuentos ===
+  [OK] $8.00 no tiene descuento (obtenido: 8.00)
+  [OK] $10.00 no tiene descuento (debe ser mayor a 10) (obtenido: 10.00)
+  [OK] $10.01 tiene 15 % de descuento (obtenido: 1.50)
+  [OK] $20.00 paga $17.00 (obtenido: 17.00)
+  [OK] $0.00 paga $0.00 (obtenido: 0.00)
+
+=== Principio abierto/cerrado: nueva regla sin modificar la calculadora ===
+  [OK] $60.00 con promoción del 20 % paga $48.00 (obtenido: 48.00)
+  [OK] $30.00 sigue con el 15 % y paga $25.50 (obtenido: 25.50)
+
+=== Polimorfismo: cada producto calcula su precio ===
+  [OK] Capuchino grande = 2.50 + 1.00 (obtenido: 3.50)
+  [OK] Sándwich para llevar = 4.50 + 0.30 (obtenido: 4.80)
+
+=== Persistencia con JDBC ===
+  SQLite 3.46.1 - pedidos registrados: 0
+  [OK] El primer pedido guardado recibe el id 1 (obtenido: 1.00)
+  [OK] El segundo pedido guardado recibe el id 2 (obtenido: 2.00)
+
+Resultado: 11 pruebas aprobadas, 0 fallidas
